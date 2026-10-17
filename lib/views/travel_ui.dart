@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_thai_hotline_app/views/about_ui.dart';
 import 'package:flutter_thai_hotline_app/models/data_list.dart';
-import 'package:flutter_thai_hotline_app/views/sub_b_home_ui.dart';
-import 'package:flutter_thai_hotline_app/views/sub_c_home_ui.dart';
-import 'package:flutter_thai_hotline_app/views/sub_d_home_ui.dart';
+import 'package:flutter_thai_hotline_app/views/emg_ui.dart';
+import 'package:flutter_thai_hotline_app/views/blank_ui.dart';
+import 'package:flutter_thai_hotline_app/views/pub_ui.dart';
 
-class SubAHomeUI extends StatefulWidget {
-  SubAHomeUI({super.key});
+class TravelUI extends StatefulWidget {
+  TravelUI({super.key});
 
   @override
-  State<SubAHomeUI> createState() => _SubAHomeUIState();
+  State<TravelUI> createState() => _TravelUIState();
 }
 
-class _SubAHomeUIState extends State<SubAHomeUI> {
+class _TravelUIState extends State<TravelUI> {
   int _selectedIndex = 0;
 
   @override
@@ -41,10 +41,10 @@ class _SubAHomeUIState extends State<SubAHomeUI> {
         ],
       ),
       body: switch (_selectedIndex) {
-        0 => SubAPageUI(),
-        1 => SubBHomeUI(),
-        2 => SubCHomeUI(),
-        _ => SubDHomeUI(),
+        0 => TravelPageUI(),
+        1 => EmgUI(),
+        2 => BlankUI(),
+        _ => PubUI(),
       },
       bottomNavigationBar: SizedBox(
         height: 86,
@@ -106,8 +106,8 @@ class _SubAHomeUIState extends State<SubAHomeUI> {
   }
 }
 
-class SubAPageUI extends StatelessWidget {
-  SubAPageUI({super.key});
+class TravelPageUI extends StatelessWidget {
+  TravelPageUI({super.key});
 
   @override
   Widget build(BuildContext context) {

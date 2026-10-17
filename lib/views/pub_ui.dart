@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_thai_hotline_app/models/data_list.dart';
 
-class SubBHomeUI extends StatelessWidget {
-  SubBHomeUI({super.key});
+class PubUI extends StatelessWidget {
+  PubUI({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class SubBHomeUI extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(top: 12),
           child: Text(
-            'สายด่วน\nอุบัติเหตุ-เหตุฉุกเฉิน',
+            'สายด่วน\nสาธารณูปโภค',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
           ),
@@ -21,7 +21,7 @@ class SubBHomeUI extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 12),
             child: Image.asset(
-              emergencyImagesForCarouselSlider.first,
+              utilityImagesForCarouselSlider.first,
               width: double.infinity,
               fit: BoxFit.contain,
             ),
@@ -36,7 +36,7 @@ class SubBHomeUI extends StatelessWidget {
                   child: ListView(
                     clipBehavior: Clip.hardEdge,
                     padding: EdgeInsets.only(bottom: 12),
-                    children: emergencyDataList.map((item) {
+                    children: utilityDataList.map((item) {
                       return Container(
                         margin: EdgeInsets.symmetric(
                           horizontal: 12,

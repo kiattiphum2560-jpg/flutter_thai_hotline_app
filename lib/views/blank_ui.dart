@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_thai_hotline_app/models/data_list.dart';
 
-class SubCHomeUI extends StatelessWidget {
-  SubCHomeUI({super.key});
+class BlankUI extends StatelessWidget {
+  BlankUI({super.key});
 
   @override
   Widget build(BuildContext context) {

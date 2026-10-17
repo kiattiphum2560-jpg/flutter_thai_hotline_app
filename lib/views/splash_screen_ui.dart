@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_thai_hotline_app/views/sub_a_home_ui.dart';
+import 'package:flutter_thai_hotline_app/views/travel_ui.dart';
 
 class SplashScreenUi extends StatefulWidget {
   SplashScreenUi({super.key});
@@ -15,7 +15,7 @@ class _SplashScreenUiState extends State<SplashScreenUi> {
     var navigator = Navigator.of(context);
     Future.delayed(Duration(seconds: 3), () {
       navigator.pushReplacement<void, void>(
-        MaterialPageRoute<void>(builder: (context) => SubAHomeUI()),
+        MaterialPageRoute<void>(builder: (context) => TravelUI()),
       );
     });
   }
